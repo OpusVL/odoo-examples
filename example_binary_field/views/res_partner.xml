@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="base_view_partner_form">
+        <field name="name">res.partner.form.example_binary_field</field>
+        <field name="model">res.partner</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="before">
+                <group>
+                    <group>
+                        <field name="example_contract" filename="example_contract_filename"/>
+                        <field name="example_contract_filename" invisible="1"/>
+                    </group>
+                </group>
+            </notebook>
+        </field>
+    </record>    
+</odoo>
