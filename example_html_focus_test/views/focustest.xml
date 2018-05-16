@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="example_html_focus_form">
+        <field name="name">example.html.focus.form</field>
+        <field name="model">example.html.focus</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <header>
+            </header>
+            <sheet>
+                <group>
+                    <group>
+                        <field name="name" default_focus="1"/>
+                        <!-- https://www.odoo.com/forum/help-1/question/how-to-direct-a-cursor-to-a-specific-field-when-user-opens-and-edits-a-form-of-picking-list-e-g-odoo-8-92968 -->
+                        <field name="field_01"/>
+                        <field name="field_02"/>
+                        <field name="field_03"/>
+                        <field name="field_04"/>
+                        <field name="field_05"/>
+                        <field name="field_06"/>
+                        <field name="field_07"/>
+                        <field name="field_08"/>
+                        <field name="field_09"/>
+                        <field name="field_10"/>
+                        <field name="field_11"/>
+                        <field name="field_12"/>
+                        <field name="field_13"/>
+                        <field name="field_14"/>
+                        <field name="field_15"/>
+                        <field name="field_16"/>
+                        <field name="field_17"/>
+                        <field name="field_18"/>
+                        <field name="field_19"/>
+                        <field name="field_20"/>
+                        <field name="field_21"/>
+                        <field name="field_22"/>
+                        <field name="field_23"/>
+                        <field name="field_24"/>
+                        <field name="field_25"/>
+                        <field name="field_26"/>
+                        <field name="field_27"/>
+                        <field name="field_28"/>
+                        <field name="field_29"/>
+                        <field name="field_30"/>
+                        <field name="field_31"/>
+                        <field name="field_32"/>
+                        <field name="field_33"/>
+                        <field name="field_34"/>
+                        <field name="field_35"/>
+                        <field name="field_36"/>
+                        <field name="field_37"/>
+                        <field name="field_38"/>
+                        <field name="field_39"/>
+                        <field name="field_40"/>
+                        <field name="field_41"/>
+                        <field name="field_42"/>
+                        <field name="field_43"/>
+                        <field name="field_44"/>
+                        <field name="field_45"/>
+                        <field name="field_46"/>
+                        <field name="field_47"/>
+                        <field name="field_48"/>
+                        <field name="field_49"/>
+                        <field name="field_50"/>
+                        <field name="html_field"/>
+                    </group>
+                </group>
+            </sheet>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="example_html_focus_tree">
+        <field name="name">example.html.focus.tree</field>
+        <field name="model">example.html.focus</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="act_example_html_focus">
+        <field name="name">HTML Focus Stealing Test</field>
+        <field name="res_model">example.html.focus</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Examples" id="examples_top_menu"/> <!-- TODO if any other examples want this, extract into an examples_common module -->
+    <menuitem name="HTML Focus Stealing Test" action="act_example_html_focus" parent="examples_top_menu" id="focus_stealing_test_menu"/>
+</odoo>
